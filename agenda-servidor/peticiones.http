@@ -1,0 +1,34 @@
+@host = http://localhost:5000/api
+
+###
+
+GET  {{host}}/agenda
+
+###
+POST {{host}}/agenda/add
+Content-Type: application/json
+
+{
+    "titulo":"Hola3",
+    "descriptcion":"asdasasd"
+}
+
+
+
+
+
+
+
+
+###
+PUT {{host}}/agenda/update/6
+Content-Type: application/json
+
+{
+    "titulo":"hola5",
+    "descriptcion":"actualizado"
+}
+
+
+###
+DELETE  {{host}}/agenda/delecte/7
